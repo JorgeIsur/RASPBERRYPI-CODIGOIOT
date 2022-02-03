@@ -51,6 +51,8 @@ si las conexiones y el soporte i2c fue habilitado correctamente, podemos comprob
 obteniendo la siguiente salida si el sensor está siendo detectado: 
 
 ![mlx90614](../imagenes/deteccion.png)
+
+
 **0x5A** representa la dirección lógica del sensor, esto es mencionado en la hoja de datos del fabricante:
 
 ![datasheet](../imagenes/datasheet.png)
