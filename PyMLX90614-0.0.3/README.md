@@ -8,7 +8,9 @@ Programa en python para el manejo del sensor de temperatura infrarrojo MLX90614 
 - Nos pedirá una confirmación y le diremos que sí.
 
 ![confirmacion](../imagenes/confirm.png)
-- Ahora tednremos habilitada la interfaz i2c de nuestra raspberry pi.![listo](../imagenes/listo.png)
+- Ahora tendremos habilitada la interfaz i2c de nuestra raspberry pi.
+
+![listo](../imagenes/listo.png)
 ## Librería PyMLX90614.
 Librería en python para el manejo del sensor de temperatura infrarrojo MLX90614, que funciona con ayuda del modulo [smbus2](https://pypi.org/project/smbus2/). Compatible con Python 2 y Python 3.
 ## Descargar e instalar la librería PyMLX90614.
