@@ -5,7 +5,9 @@ Programa en python para el manejo del sensor de temperatura infrarrojo MLX90614 
 ## Habilitar la interfaz i2c en los ajustes de la raspberry pi
 - Abrimos una terminal e ingresamos el siguiente comando: `sudo raspi-config`, posteriormente aparecerá la siguiente ventana: ![raspi-config](../imagenes/raspi.png)
 - Una vez ahi, seleccionaremos las opciones de interfaz, y seleccionaremos la interfaz i2c.![i2c](../imagenes/i2c.png)
-- Nos pedirá una confirmación y le diremos que sí.![confirmacion](../imagenes/confirm.png)
+- Nos pedirá una confirmación y le diremos que sí.
+
+![confirmacion](../imagenes/confirm.png)
 - Ahora tednremos habilitada la interfaz i2c de nuestra raspberry pi.![listo](../imagenes/listo.png)
 ## Librería PyMLX90614.
 Librería en python para el manejo del sensor de temperatura infrarrojo MLX90614, que funciona con ayuda del modulo [smbus2](https://pypi.org/project/smbus2/). Compatible con Python 2 y Python 3.
