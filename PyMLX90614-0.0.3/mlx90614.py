@@ -101,5 +101,5 @@ while(1):
     else:
         print("MODO STANDBY")
         print("Presione el boton durante 3 segundos para iniciar la lectura.")
-        parpadeo()
+        parpadeo(LED_ENCENDIDO,LED_MQTT,LED_STANDBY)
 bus.close()
