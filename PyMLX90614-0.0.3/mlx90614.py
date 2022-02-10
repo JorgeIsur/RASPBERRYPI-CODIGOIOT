@@ -96,6 +96,8 @@ def mostrarHora():
     dia = dt.datetime.now().day
     mes = dt.datetime.now().month
     year = dt.datetime.now().year
+    if minutos<10:
+        minutos = '0'+str(minutos)
     print(f"{dia}/{mes}/{year} a las {hora}:{minutos}")
 #programa principal
 try:
