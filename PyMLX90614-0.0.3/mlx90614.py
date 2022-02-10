@@ -27,7 +27,7 @@ def on_connect(client, userdata, flags, rc):
     print(f"Conectado con codigo de resultado {rc}")
 def hayInternet():
     try:
-        urllib2.urlopen('http://216.58.192.142', timeout=1)
+        urllib2.urlopen('http://google.com.mx', timeout=1)
         return True
     except urllib2.URLError as err: 
         return False
@@ -134,11 +134,11 @@ try:
         else:
             mostrarHora()
             print("Presione el boton durante 3 segundos para iniciar la lectura.")
-            parpadeo(LED_ENCENDIDO,LED_MQTT,LED_STANDBY)
+            standby(LED_ENCENDIDO,LED_MQTT,LED_LECTURA)
 except KeyboardInterrupt:
     print("Finalizando programa.")
-    print(f"Apagando leds {LED_MQTT,LED_ENCENDIDO,LED_STANDBY}")
+    print(f"Apagando leds {LED_MQTT,LED_ENCENDIDO,LED_LECTURA}")
     gpio.output(LED_ENCENDIDO,False)
     gpio.output(LED_MQTT,False)
-    gpio.output(LED_STANDBY,False)
+    gpio.output(LED_LECTURA,False)
     bus.close()
