@@ -5,7 +5,7 @@ from mlx90614 import MLX90614 #manejo del sensor de temperatura
 import time #manejo del tiempo
 import RPi.GPIO as gpio #control del acceso GPIO de la raspberry
 import random #generacion de numeros aleatorios
-import urllib2 #comprobacion de conexion a internet
+import urllib.request as urllib2 #comprobacion de conexion a internet
 import datetime as dt
 #instancias de objetos
 bus = SMBus(1)
