@@ -101,6 +101,10 @@ def mostrarHora():
 try:
     gpio.setwarnings(False)
     gpio.setmode(gpio.BOARD)
+    gpio.setup(pin_button,gpio.IN,pull_up_down=gpio.PUD_DOWN)
+    gpio.setup(LED_ENCENDIDO,gpio.OUT)
+    gpio.setup(LED_MQTT,gpio.OUT)
+    gpio.setup(LED_LECTURA,gpio.OUT)
     while(hayInternet()==False):
         print("No se encuentra una conexion a Internet.")
         gpio.output(LED_ENCENDIDO,True)
@@ -108,10 +112,6 @@ try:
         print("Reintentando en 5 segundos...")
         time.sleep(5)
     print("Conectado a Internet.")
-    gpio.setup(pin_button,gpio.IN,pull_up_down=gpio.PUD_DOWN)
-    gpio.setup(LED_ENCENDIDO,gpio.OUT)
-    gpio.setup(LED_MQTT,gpio.OUT)
-    gpio.setup(LED_LECTURA,gpio.OUT)
     gpio.output(LED_ENCENDIDO,True)
     client = mqtt.Client()
     client.on_connect = on_connect
